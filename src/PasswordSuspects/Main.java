@@ -32,29 +32,6 @@
  */
 package PasswordSuspects;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 public class Main {
-    static Scanner sc = new Scanner(System.in);
-    public static void main(String[] args) {
-        String str="abcdefghijklmnopqrstuvwxyz";
-        String[] strint = sc.nextLine().split(" ");
-        int m = Integer.parseInt(strint[0]);
-        int n = Integer.parseInt(strint[1]);
-        int result=1;
-        List<String> password = new ArrayList<>();
-        int lenstr = 0;//子串长度和
-        String[] sub = new String[n];
-        for (int i=0;i<n;i++){
-            sub[i]=sc.nextLine();
-            lenstr+=sub[i].length();
-        }
-        if (lenstr==m){
-            for (int i = 1; i <= n; i++) {
-                result*=i;
-            }
-        }
-    }
+
 }
